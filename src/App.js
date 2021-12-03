@@ -20,6 +20,7 @@ export default function App() {
 const images = imagesArr.map((image, index) => {
   return (
     <img
+    style={{ border: bigImage === image.img ? "5px solid green" : "" }}
     src={image.img}
     alt={image.city}
     key={index}
